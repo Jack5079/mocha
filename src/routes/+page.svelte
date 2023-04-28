@@ -61,13 +61,3 @@
 		perspiciatis aliquid iste.
 	</blockquote>
 </Article>
-
-<style>
-	label {
-		user-select: none;
-		display: flex;
-		align-items: center;
-		gap: 1ch;
-		flex-direction: row;
-	}
-</style>
