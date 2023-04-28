@@ -3,17 +3,9 @@ export async function load() {
 	const extensions = ["mp4", "mov", "webm", "3gpp"]
 	return {
 		videos: (
-			await (
-				await fetch(
-					`https://api.github.com/repos/Exruw/hubvideos/git/trees/${
-						(
-							await (
-								await fetch("https://api.github.com/repos/Exruw/hubvideos/commits")
-							).json()
-						)[0]?.commit?.tree?.sha
-					}`
-				)
-			).json()
+			await fetch("https://api.github.com/repos/Exruw/hubvideos/git/trees/HEAD").then(res =>
+				res.json()
+			)
 		).tree
 			.filter(
 				file =>
