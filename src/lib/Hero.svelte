@@ -13,21 +13,13 @@
 		align-items: center;
 		gap: 10ch;
 		flex-direction: row;
-		flex-wrap: 1;
-		padding-inline: 20%;
+		overflow: hidden;
+		flex-wrap: wrap;
 		box-sizing: border-box;
+		padding-inline: 20px;
 	}
-	header :global(section) {
-		inline-size: 50%;
-	}
-	@media (max-width: 800px) {
-		header {
-			padding-inline: 10%;
-			flex-direction: column;
-		}
-		header :global(section) {
-			inline-size: 100%;
-		}
 
+	header :global(section) {
+		position: relative;
 	}
 </style>

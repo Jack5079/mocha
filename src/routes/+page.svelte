@@ -2,6 +2,7 @@
 	import { Mention } from "$lib"
 	import Article from "$lib/Article.svelte"
 	import Button from "$lib/Button.svelte"
+	import Circles from "$lib/Circles.svelte"
 	import Hero from "$lib/Hero.svelte"
 	import Install from "$lib/Install.svelte"
 	import Loading from "$lib/Loading.svelte"
@@ -14,9 +15,13 @@
 		document.body.dir = "ltr"
 	}
 </script>
+
 <svelte:head>
 	<title>Mocha Design System - Demo</title>
-	<meta name="description" content="Etcetera's design system, powered by Svelte and Catppuccin. 🐱☕">
+	<meta
+		name="description"
+		content="Etcetera's design system, powered by Svelte and Catppuccin. 🐱☕"
+	/>
 </svelte:head>
 
 <Hero>
@@ -27,7 +32,13 @@
 		<Button href="/hubchicken">Hubchicken Demo</Button>
 	</section>
 	<section>
-		<span>🤯</span>
+		<img
+			src="https://picsum.photos/1600/900"
+			alt="picsum random"
+			width="500"
+			style="max-width:100%;width:500px"
+		/>
+		<Circles />
 	</section>
 </Hero>
 <Article
