@@ -40,10 +40,16 @@
 		inset-inline-start: 3px;
 		inline-size: 12px;
 		block-size: 12px;
-		transition: translate 0.1s, background-color 0.1s;
+		transition: translate 0.1s, background-color 0.1s, inline-size .1s;
 	}
 	button:hover {
 		background-color: var(--surface1);
+	}
+	button:active::before {
+		inline-size: 15px;
+	}
+	button[aria-pressed="true"]:active::before {
+		translate: 16px;
 	}
 	button:active {
 		background-color: var(--surface2);
