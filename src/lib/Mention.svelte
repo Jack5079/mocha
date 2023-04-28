@@ -22,7 +22,7 @@
 		display: inline-flex;
 		background: var(--surface1);
 		border-radius: 1ch;
-		padding-right: 1ch;
+		padding-inline-end: 1ch;
 		align-items: center;
 		gap: 1ch;
 		flex-direction: row;

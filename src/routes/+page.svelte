@@ -43,6 +43,10 @@
 			<Switch bind:toggled={minimap} />
 			<span>Minimap (Firefox only!)</span>
 		</label>
+		<label>
+			<Switch bind:toggled={rtl} />
+			<span>Yusof mode</span>
+		</label>
 	</fieldset>
 </Article>
 

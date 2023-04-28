@@ -56,6 +56,9 @@
 		translate: 20px;
 		background-color: var(--surface0);
 	}
+	button[aria-pressed="true"]:dir(rtl)::before {
+		translate: -20px;
+	}
 	@media (prefers-color-scheme: light) {
 		button:not([aria-pressed="true"]):before {
 			background-color: var(--blue);

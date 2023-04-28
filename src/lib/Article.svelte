@@ -92,8 +92,8 @@
 	}
 	.minimap {
 		position: fixed;
-		top: 20px;
-		right: 20px;
+		inset-block-start: 20px;
+		inset-inline-end: 20px;
 		height: 100vh;
 		width: 200px;
 	}
