@@ -1,0 +1,82 @@
+:root {
+	--rosewater: #f5e0dc;
+	--flamingo: #f2cdcd;
+	--pink: #f5c2e7;
+	--mauve: #cba6f7;
+	--red: #f38ba8;
+	--maroon: #eba0ac;
+	--peach: #fab387;
+	--yellow: #f9e2af;
+	--green: #a6e3a1;
+	--teal: #94e2d5;
+	--sky: #89dceb;
+	--sapphire: #74c7ec;
+	--blue: #87b0f9;
+	--lavender: #b4befe;
+	--text: #c6d0f5;
+	--subtext1: #b3bcdf;
+	--subtext0: #a1a8c9;
+	--overlay2: #8e95b3;
+	--overlay1: #7b819d;
+	--overlay0: #696d86;
+	--surface2: #565970;
+	--surface1: #43465a;
+	--surface0: #313244;
+	--base: #1e1e2e;
+	--mantle: #181825;
+	--crust: #11111b;
+	accent-color: var(--rosewater);
+}
+a {
+	color: var(--rosewater);
+}
+fieldset {
+	border-color: var(--surface0);
+	border-radius: 1ch;
+}
+@media (prefers-color-scheme: light) {
+	:root {
+		--rosewater: #de9584;
+		--flamingo: #dd7878;
+		--pink: #ec83d0;
+		--mauve: #8839ef;
+		--red: #d20f39;
+		--maroon: #e64553;
+		--peach: #fe640b;
+		--yellow: #e49320;
+		--green: #40a02b;
+		--teal: #179299;
+		--sky: #04a5e5;
+		--sapphire: #209fb5;
+		--blue: #2a6ef5;
+		--lavender: #7287fd;
+		--text: #4c4f69;
+		--subtext1: #5c5f77;
+		--subtext0: #6c6f85;
+		--overlay2: #7c7f93;
+		--overlay1: #8c8fa1;
+		--overlay0: #9ca0b0;
+		--surface2: #acb0be;
+		--surface1: #bcc0cc;
+		--surface0: #ccd0da;
+		--base: #eff1f5;
+		--mantle: #e6e9ef;
+		--crust: #dce0e8;
+		accent-color: var(--blue);
+	}
+	a {
+		color: var(--blue);
+	}
+}
+
+body {
+	background-color: var(--base);
+	color: var(--text);
+	font-family: "Inter", sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+:focus-visible {
+	outline: solid 3px var(--text);
+}
