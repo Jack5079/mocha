@@ -27,7 +27,7 @@
 	<section>
 		<h1>Mochachicken</h1>
 		<p>
-			Welcome to hell. We have {data.videos.length} videos.
+			Welcome to hell. We have thousands of videos for<wbr />you to watch.
 		</p>
 		<Button on:click={shuffle}>Next video</Button>
 		<!-- svelte-ignore a11y-label-has-associated-control -->
@@ -39,10 +39,25 @@
 	<!-- svelte-ignore a11y-media-has-caption -->
 	<video controls src={video} on:ended={() => autoplay && shuffle()} loop={!autoplay} autoplay />
 </Hero>
+<section class="vids">
+	<h1>All {data.videos.length} videos</h1>
+	{#each data.videos as video}
+		<a download href={video}>
+			{video.split("/").pop().split(".")[0].replaceAll("_", " ").replaceAll("-", " ")}
+		</a>
+	{/each}
+</section>
 <!-- svelte-ignore a11y-media-has-caption -->
 <video preload="auto" src={next} hidden aria-hidden style="display:none" taborder="-1" />
 
 <style>
+	.vids {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	a {
+		display: block;
+	}
 	video {
 		background: black;
 		aspect-ratio: 16 / 9;
