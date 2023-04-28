@@ -6,6 +6,12 @@
 	import Loading from "$lib/Loading.svelte"
 	import Switch from "$lib/Switch.svelte"
 	let minimap = false
+	let rtl = false
+	$: if (rtl) {
+		document.body.dir = "rtl"
+	} else if (typeof document !== "undefined") {
+		document.body.dir = "ltr"
+	}
 </script>
 
 <Hero>
@@ -49,6 +55,11 @@
 			<span>Yusof mode</span>
 		</label>
 	</fieldset>
+	<blockquote>
+		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem sit amet esse sint ab totam
+		odit dignissimos enim odio. Amet vel voluptates inventore dolorem iusto dignissimos earum
+		perspiciatis aliquid iste.
+	</blockquote>
 </Article>
 
 <style>
