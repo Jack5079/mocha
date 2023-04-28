@@ -1,6 +1,5 @@
 <script>
-	import Hero from "$lib/Hero.svelte"
-	import Switch from "$lib/Switch.svelte"
+	import { Hero, Switch, Button } from "$lib"
 	export let data
 	let video
 	let autoplay
@@ -30,7 +29,7 @@
 		<p>
 			Welcome to hell. We have {data.videos.length} videos.
 		</p>
-		<button on:click={shuffle}>Next video</button>
+		<Button on:click={shuffle}>Next video</Button>
 		<!-- svelte-ignore a11y-label-has-associated-control -->
 		<label>
 			<Switch bind:toggled={autoplay} />
