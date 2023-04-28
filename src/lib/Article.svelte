@@ -56,7 +56,12 @@
 </article>
 
 {#if minimap}
-	<div aria-hidden class="minimap" transition:fly|local={{ y: -10 }} />
+	<div
+		aria-hidden
+		class="minimap"
+		transition:fly|local={{ y: -10 }}
+		style="background: -moz-element(#main) no-repeat scroll top center / contain;"
+	/>
 {/if}
 
 <style>
@@ -91,6 +96,5 @@
 		right: 20px;
 		height: 100vh;
 		width: 200px;
-		background: -moz-element(#main) no-repeat scroll top center / contain;
 	}
 </style>
