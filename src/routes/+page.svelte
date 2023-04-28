@@ -1,6 +1,7 @@
 <script>
 	import { Mention } from "$lib"
 	import Article from "$lib/Article.svelte"
+	import Button from "$lib/Button.svelte"
 	import Hero from "$lib/Hero.svelte"
 	import Install from "$lib/Install.svelte"
 	import Loading from "$lib/Loading.svelte"
@@ -23,6 +24,7 @@
 		<h1>Mocha</h1>
 		<p>Etcetera's design system, powered by Svelte and Catppuccin.</p>
 		<Install>pnpm i @moller/mocha</Install>
+		<Button href="/hubchicken">Hubchicken Demo</Button>
 	</section>
 	<section>
 		<span>🤯</span>
