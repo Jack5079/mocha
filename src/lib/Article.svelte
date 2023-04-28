@@ -46,6 +46,7 @@
 				})}
 			</time>
 		</a>
+		<slot name="metadata" />
 		{#if description}
 			<p class="p-summary">{description}</p>
 		{/if}
