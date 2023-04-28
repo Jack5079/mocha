@@ -2,6 +2,7 @@
 	import { Mention } from "$lib"
 	import Article from "$lib/Article.svelte"
 	import Hero from "$lib/Hero.svelte"
+	import Install from "$lib/Install.svelte"
 	import Loading from "$lib/Loading.svelte"
 	import Switch from "$lib/Switch.svelte"
 	let minimap = false
@@ -11,6 +12,7 @@
 	<section>
 		<h1>Mocha</h1>
 		<p>Etcetera's design system, powered by Svelte and Catppuccin.</p>
+		<Install>pnpm i @moller/mocha</Install>
 	</section>
 	<section>
 		<span>🤯</span>
