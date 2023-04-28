@@ -1,6 +1,10 @@
 {
-	"name": "mocha",
-	"version": "0.0.1",
+	"name": "@mollersuite/mocha",
+	"version": "0.1.0",
+	"description": "Etcetera's design system, powered by Svelte and Catppuccin. 🐱☕",
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
