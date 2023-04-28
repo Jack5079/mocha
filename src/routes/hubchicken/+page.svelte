@@ -18,9 +18,15 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Mochachicken</title>
+	<meta name="description" content="Hubchicken remade in Mocha" />
+	<meta name="robots" content="noindex" />
+</svelte:head>
+
 <Hero>
 	<section>
-		<h1>Hubchicken.tk</h1>
+		<h1>Mochachicken</h1>
 		<p>
 			Welcome to hell. We have {data.videos.length} videos.
 		</p>
@@ -35,14 +41,7 @@
 	<video controls src={video} on:ended={() => autoplay && shuffle()} loop={!autoplay} autoplay />
 </Hero>
 <!-- svelte-ignore a11y-media-has-caption -->
-<video
-	preload="auto"
-	src={next}
-	hidden
-	aria-hidden
-	style="display:none"
-	taborder="-1"
-/>
+<video preload="auto" src={next} hidden aria-hidden style="display:none" taborder="-1" />
 
 <style>
 	video {

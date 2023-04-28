@@ -13,6 +13,10 @@
 		document.body.dir = "ltr"
 	}
 </script>
+<svelte:head>
+	<title>Mocha Design System - Demo</title>
+	<meta name="description" content="Etcetera's design system, powered by Svelte and Catppuccin. 🐱☕">
+</svelte:head>
 
 <Hero>
 	<section>
