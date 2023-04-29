@@ -2,6 +2,7 @@
 	export let href
 	export let suggested = false
 </script>
+
 <!--
 	@component
 	
@@ -11,9 +12,24 @@
 	@param {boolean?} suggested - should it be rosewater?
 -->
 {#if href}
-	<a {href} {...$$props} class="button" class:suggested><slot /></a>
+	<a
+		{href}
+		{...$$props}
+		class="button"
+		class:suggested
+	>
+		<slot />
+	</a>
 {:else}
-	<button {...$$props} class="button" class:suggested on:click on:dblclick><slot /></button>
+	<button
+		{...$$props}
+		class="button"
+		class:suggested
+		on:click
+		on:dblclick
+	>
+		<slot />
+	</button>
 {/if}
 
 <style>
@@ -30,7 +46,7 @@
 		width: max-content;
 		text-decoration: none;
 		padding-inline: 1ch;
-		padding-block: .5ch;
+		padding-block: 0.5ch;
 		box-sizing: border-box;
 		transition: background-color 0.1s ease, transform 0.2s ease;
 	}

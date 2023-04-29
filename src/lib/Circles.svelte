@@ -1,4 +1,7 @@
-<div class="circles" aria-hidden>
+<div
+	class="circles"
+	aria-hidden
+>
 	<slot />
 	<div class="circle1" />
 	<div class="circle2" />
@@ -9,10 +12,10 @@
 	.circles {
 		position: absolute;
 		top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: -1;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: -1;
 		aspect-ratio: 1 / 1;
 		overflow: visible;
 	}
@@ -87,7 +90,7 @@
 			height: 25%;
 		}
 	}
-  
+
 	.circle1 {
 		position: absolute;
 		animation: circle1Path 15s infinite;

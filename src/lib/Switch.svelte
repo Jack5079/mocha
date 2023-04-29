@@ -12,7 +12,11 @@
 	@param {disabled} boolean
 -->
 
-<button aria-pressed={toggled} on:click={() => (toggled = !toggled)} {disabled}>
+<button
+	aria-pressed={toggled}
+	on:click={() => (toggled = !toggled)}
+	{disabled}
+>
 	<slot />
 </button>
 
@@ -40,7 +44,7 @@
 		inset-inline-start: 3px;
 		inline-size: 12px;
 		block-size: 12px;
-		transition: translate 0.1s, background-color 0.1s, inline-size .1s;
+		transition: translate 0.1s, background-color 0.1s, inline-size 0.1s;
 	}
 	button:hover {
 		background-color: var(--surface1);

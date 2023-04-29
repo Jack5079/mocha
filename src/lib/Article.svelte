@@ -31,14 +31,28 @@
 	@param {string?} heroAlt
 	@param {boolean?} minimap - Enable minimap (for Firefox users only, see https://www.stefanjudis.com/a-firefox-only-minimap/)
 -->
-<article class="h-entry" id="main">
+<article
+	class="h-entry"
+	id="main"
+>
 	{#if hero}
-		<img src={hero} alt={heroAlt} class="u-featured" loading="lazy" />
+		<img
+			src={hero}
+			alt={heroAlt}
+			class="u-featured"
+			loading="lazy"
+		/>
 	{/if}
 	<hgroup>
 		<h1 class="p-name">{title}</h1>
-		<a class="u-url" href={canonical}>
-			<time datetime={published.toISOString()} class="dt-published">
+		<a
+			class="u-url"
+			href={canonical}
+		>
+			<time
+				datetime={published.toISOString()}
+				class="dt-published"
+			>
 				{published.toLocaleDateString("en-us", {
 					year: "numeric",
 					month: "short",

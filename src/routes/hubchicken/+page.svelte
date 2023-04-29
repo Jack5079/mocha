@@ -19,15 +19,23 @@
 
 <svelte:head>
 	<title>Mochachicken</title>
-	<meta name="description" content="Hubchicken remade in Mocha" />
-	<meta name="robots" content="noindex" />
+	<meta
+		name="description"
+		content="Hubchicken remade in Mocha"
+	/>
+	<meta
+		name="robots"
+		content="noindex"
+	/>
 </svelte:head>
 
 <Hero>
 	<section>
 		<h1>Mochachicken</h1>
 		<p>
-			Welcome to hell. We have thousands of videos for<wbr />you to watch.
+			Welcome to hell. We have thousands of videos for
+			<wbr />
+			you to watch.
 		</p>
 		<Button on:click={shuffle}>Next video</Button>
 		<!-- svelte-ignore a11y-label-has-associated-control -->
@@ -37,18 +45,34 @@
 		</label>
 	</section>
 	<!-- svelte-ignore a11y-media-has-caption -->
-	<video controls src={video} on:ended={() => autoplay && shuffle()} loop={!autoplay} autoplay />
+	<video
+		controls
+		src={video}
+		on:ended={() => autoplay && shuffle()}
+		loop={!autoplay}
+		autoplay
+	/>
 </Hero>
 <section class="vids">
 	<h1>All {data.videos.length} videos</h1>
 	{#each data.videos as video}
-		<a download href={video}>
+		<a
+			download
+			href={video}
+		>
 			{video.split("/").pop().split(".")[0].replaceAll("_", " ").replaceAll("-", " ")}
 		</a>
 	{/each}
 </section>
 <!-- svelte-ignore a11y-media-has-caption -->
-<video preload="auto" src={next} hidden aria-hidden style="display:none" taborder="-1" />
+<video
+	preload="auto"
+	src={next}
+	hidden
+	aria-hidden
+	style="display:none"
+	taborder="-1"
+/>
 
 <style>
 	.vids {

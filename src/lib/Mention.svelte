@@ -13,7 +13,12 @@
 -->
 <a {href}>
 	<!-- svelte-ignore a11y-missing-attribute -->
-	<img {src} aria-hidden inert loading="lazy" />
+	<img
+		{src}
+		aria-hidden
+		inert
+		loading="lazy"
+	/>
 	<slot />
 </a>
 

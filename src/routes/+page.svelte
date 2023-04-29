@@ -34,9 +34,8 @@
 	<section>
 		<img
 			src="https://picsum.photos/1600/900"
-			alt="picsum random"
+			alt="Placeholder for Hero"
 			width="500"
-			style="max-width:100%;width:500px"
 		/>
 		<Circles />
 	</section>
@@ -52,13 +51,16 @@
 >
 	<span slot="metadata">| 5 minute read</span>
 	<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
-	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+	<p>
+		Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a>
+		to read the documentation
+	</p>
 	<p>
 		Hello! I am <Mention href="https://wetdry.world/@j">j@wetdry.world</Mention> on the Fediverse.
 	</p>
 	<p>
-		<Loading /> Trolling... When using Loading, makes sure to
-		<code>{'aria-live="polite" aria-busy={loading}'}</code>.
+		<Loading /> Trolling... When using Loading, make sure to
+		<code>{'aria-live="polite" aria-busy={loading}'}</code>
 	</p>
 	<!-- svelte-ignore a11y-label-has-associated-control -->
 	<fieldset>
@@ -78,3 +80,16 @@
 		perspiciatis aliquid iste.
 	</blockquote>
 </Article>
+
+<style>
+	img {
+		border-radius: 0.5rem;
+		max-width: 100%;
+		width: 500px;
+		background-color: var(--surface0);
+		aspect-ratio: 16 / 9;
+		color: transparent;
+		font-size: larger;
+		font-weight: bolder;
+	}
+</style>
