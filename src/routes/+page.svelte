@@ -28,8 +28,10 @@
 	<section>
 		<h1>Mocha</h1>
 		<p>Etcetera's design system, powered by Svelte and Catppuccin.</p>
-		<Install>pnpm i @moller/mocha</Install>
-		<Button href="/hubchicken">Hubchicken Demo</Button>
+		<nav>
+			<Install>pnpm i @moller/mocha</Install>
+			<Button href="/hubchicken">Hubchicken Demo</Button>
+		</nav>
 	</section>
 	<section>
 		<img
@@ -91,5 +93,11 @@
 		color: transparent;
 		font-size: larger;
 		font-weight: bolder;
+	}
+	nav {
+		display: flex;
+		align-items: stretch;
+		gap: 1ch;
+		flex-direction: row;
 	}
 </style>

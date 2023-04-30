@@ -38,7 +38,11 @@
 		border-color: var(--surface1);
 		border-radius: 1ch;
 		border-style: solid;
-		display: inline-block;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1ch;
+		flex-direction: row;
 		border-width: 1px;
 		color: var(--text);
 		cursor: pointer;
