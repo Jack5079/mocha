@@ -96,7 +96,9 @@
 	}
 	nav {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: stretch;
+		justify-content: center;
 		gap: 1ch;
 		flex-direction: row;
 	}
