@@ -32,11 +32,7 @@
 <Hero>
 	<section>
 		<h1>Mochachicken</h1>
-		<p>
-			Welcome to hell. We have thousands of videos for
-			<wbr />
-			you to watch.
-		</p>
+		<p>Welcome to hell. We have thousands of videos for you to watch.</p>
 		<Button on:click={shuffle}>Next video</Button>
 		<!-- svelte-ignore a11y-label-has-associated-control -->
 		<label>
@@ -81,6 +77,7 @@
 	}
 	a {
 		display: block;
+		word-wrap: break-word;
 	}
 	video {
 		background: black;
