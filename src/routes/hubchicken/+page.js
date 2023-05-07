@@ -1,4 +1,4 @@
-/** @type {import('./$types').PageServerLoad} */
+/** @type {import('./$types').PageLoad} */
 export async function load() {
 	const extensions = ["mp4", "mov", "webm", "3gpp"]
 	return {
