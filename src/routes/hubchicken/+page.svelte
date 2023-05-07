@@ -4,6 +4,7 @@
 	let video
 	let autoplay
 	let next
+	let wasted = 0
 	/** @type {<Type>(arr: Type[]) => Type} */
 	const random = arr => arr[Math.floor(Math.random() * arr.length)]
 	function shuffle() {
@@ -14,6 +15,12 @@
 			video = next
 			next = random(data.videos)
 		}
+		fetch(video, {
+			method: "HEAD",
+			cache: "force-cache",
+		}).then(res => {
+			wasted += ~~(Math.random() * 10) // cf doesn't send content-length header so let's just make it up
+		})
 	}
 </script>
 
@@ -35,6 +42,9 @@
 				Autoplay next video
 			</label>
 		</form>
+		<p style="font-family: Futura, sans-serif">
+			you have wasted {wasted}MB of Cloudfare's bandwidth
+		</p>
 	</section>
 	<!-- svelte-ignore a11y-media-has-caption -->
 	<figure>
