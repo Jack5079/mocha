@@ -41,13 +41,20 @@
 		</label>
 	</section>
 	<!-- svelte-ignore a11y-media-has-caption -->
-	<video
-		controls
-		src={video}
-		on:ended={() => autoplay && shuffle()}
-		loop={!autoplay}
-		autoplay
-	/>
+	<figure>
+		{#if video}
+			<figcaption>
+				{video.split("/").pop().split(".")[0].replaceAll("_", " ").replaceAll("-", " ")}
+			</figcaption>
+		{/if}
+		<video
+			controls
+			src={video}
+			on:ended={() => autoplay && shuffle()}
+			loop={!autoplay}
+			autoplay
+		/>
+	</figure>
 </Hero>
 <section class="vids">
 	<h1>All {data.videos.length} videos</h1>
@@ -78,6 +85,15 @@
 	a {
 		display: block;
 		word-wrap: break-word;
+	}
+	figcaption {
+		font-family: Futura, sans-serif;
+		font-size: 1.5em;
+		text-align: center;
+		background: var(--surface0);
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		border-bottom: 1px solid var(--surface1);
 	}
 	video {
 		background: black;
