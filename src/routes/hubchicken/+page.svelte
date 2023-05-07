@@ -33,12 +33,14 @@
 	<section>
 		<h1>Mochachicken</h1>
 		<p>Welcome to hell. We have thousands of videos for you to watch.</p>
-		<Button on:click={shuffle}>Next video</Button>
-		<!-- svelte-ignore a11y-label-has-associated-control -->
-		<label>
-			<Switch bind:toggled={autoplay} />
-			Autoplay next video
-		</label>
+		<form>
+			<Button type="button" on:click={shuffle}>Next video</Button>
+			<!-- svelte-ignore a11y-label-has-associated-control -->
+			<label>
+				<Switch bind:toggled={autoplay} />
+				Autoplay next video
+			</label>
+		</form>
 	</section>
 	<!-- svelte-ignore a11y-media-has-caption -->
 	<figure>
@@ -81,6 +83,12 @@
 	.vids {
 		max-width: 800px;
 		margin: 0 auto;
+	}
+	form {
+		display: flex;
+		align-items: stretch;
+		flex-wrap: wrap;
+		gap: 1ch;
 	}
 	a {
 		display: block;
