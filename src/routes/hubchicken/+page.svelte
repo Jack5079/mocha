@@ -84,4 +84,9 @@
 		aspect-ratio: 16 / 9;
 		height: 300px;
 	}
+	@font-face {
+		font-family: "Futura";
+		font-display: swap;
+		src: url("./caption.otf");
+	}
 </style>
