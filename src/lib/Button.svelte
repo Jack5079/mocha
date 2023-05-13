@@ -8,8 +8,8 @@
 	
 	Mocha's button and link.
 
-	@param {string?} href - turn it into a link and have it go here
-	@param {boolean?} suggested - should it be rosewater?
+	@param {string?} [href] - turn it into a link and have it go here
+	@param {boolean?} [suggested] - should it be rosewater?
 -->
 {#if href}
 	<a

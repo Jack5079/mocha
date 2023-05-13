@@ -1,6 +1,6 @@
 {
 	"name": "@mollersuite/mocha",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "Etcetera's design system, powered by Svelte and Catppuccin. 🐱☕",
 	"publishConfig": {
 		"access": "public"
@@ -20,7 +20,8 @@
 		".": {
 			"types": "./dist/index.d.ts",
 			"svelte": "./dist/index.js"
-		}
+		},
+		"./theme.css": "./dist/main.css"
 	},
 	"files": [
 		"dist",
